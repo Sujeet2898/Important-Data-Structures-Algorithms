@@ -54,6 +54,7 @@
 20. Minimum Window Substring
 21. Boyer Moore Algorithm for Pattern Searching
 22. Word Wrap
+23. Edit Distance 
 
 ----------------------------------------
 3. 2D Arrays
@@ -95,6 +96,13 @@
 21. Aggressive Cows
 22. Allocate Minimum number of Pages
 23. Minimum Swaps to Sort
+24. Sort a nearly sorted (or K sorted) array
+25. How to efficiently sort a big list dates in 20’s
+26. Find the missing and repeating number
+27. Sort an array according to count of set bits
+28. Minimum swaps to make two arrays identical
+29. Insert in sorted and non-overlapping interval array
+30. 3-Way QuickSort (Dutch National Flag)
 
 ------------------------------------------
 5. Linked List
@@ -125,6 +133,11 @@
 24. Flattening a linked list
 25. Clone a linked list with next and random pointer
 26. Subtract two numbers represented as linked lists
+27. Josephus Circle implementation using STL list
+28. Find a triplet from three linked lists with sum equal to a given number
+29. Find pair for given sum in a sorted singly linked without extra space
+30. Select a Random Node from a Singly Linked List
+31. Find the first non-repeating character from a stream of characters
 
 ------------------------------------------
 6. Stacks & Queues
@@ -156,6 +169,10 @@
 25. Find the maximum of minimums for every window size in a given array
 26. Iru cache implementation
 27. Find a tour that visits all stations
+28. How to implement stack using priority queue or heap?
+29. Sum of minimum and maximum elements of all subarrays of size k.
+30. Minimum time required to rot all oranges
+31. How to efficiently implement k Queues in a single array?
 
 ------------------------------------------
 7. Greedy
@@ -182,6 +199,8 @@
 20. Minimum edges to reverse to make path from a source to a destination
 21. Minimize Cash Flow among a given set of friends who have borrowed money from each other
 22. Minimum Cost to cut a board into squares
+23. Maximize array sum after K negations 
+24. Program for Shortest Job First (or SJF) CPU Scheduling (Non- preemptive)
 
 ------------------------------------------
 8. Binary Trees
@@ -217,6 +236,8 @@
 29. Serialize and Deserialize Binary Tree
 30. Binary Tree to Doubly Linked List(DLL)
 31. Print all k-sum paths in a binary tree
+32. Check Mirror in N-ary tree 
+33. Maximum sum of nodes in Binary tree such that no two are adjacent
 
 ----------------------------------------
 9. Binary Search Trees
@@ -242,6 +263,7 @@
 19. Construct BST from given preorder traversal 
 20. Find median of BST in O(n) time and O(1) space
 21. Largest BST in a Binary Tree
+22. Brothers From Different Roots 
 
 -----------------------------------------
 10. Heaps & Hashing
@@ -274,6 +296,11 @@
 26. Subarrays with distinct elements
 27. Find Recurring Sequence in a Fraction
 28. K maximum sum combinations from two arrays
+29. Find four elements a, b, c and d in an array such that a+b = c+d
+30. Check if an array can be divided into pairs whose sum is divisible by k
+31. Design an efficient data structure for given operations
+32. Find number of Employees Under every Manager
+33. A Pancake Sorting Problem
 
 ----------------------------------------
 11. Tries
@@ -342,6 +369,14 @@
 52. Optimal Binary Search Tree
 53. Largest rectangular sub-matrix whose sum is 0
 54. Largest area rectangular sub-matrix with equal number of 1’s and 0’s
+55. Maximum sum Rectangle 
+56. Interleaved Strings 
+57. Painting the Fence 
+58. Largest Independent Set Problem
+59. Minimum cost to fill given weight in a bag
+60. Boolean Parenthesization 
+61. Maximum Profit 
+62. Palindromic patitioning 
 
 ---------------------------------------------
 13. Graphs
@@ -385,6 +420,9 @@
 37. Minimize Cash Flow among a given set of friends who have borrowed money from each other
 38. Chinese Postman or Route Inspection
 39. Water Jug problem using BFS
+40. Bridges in a graph
+41. Paths to travel each nodes using each edge (Seven Bridges of Königsberg)
+42. Minimum edges to reverse to make path from a source to a destination
 
 -----------------------------------------
 14. Backtracking
@@ -410,6 +448,8 @@
 19. Solving Cryptarithmetic Puzzles | Backtracking-8
 20. Find paths from corner cell to middle cell in maze
 21. Arithmetic Expressions
+22. Find if there is a path of more than k length from a source
+23. Match a pattern and String without using regular expressions
 
 -----------------------------------------
 15.  Bit Manipulation

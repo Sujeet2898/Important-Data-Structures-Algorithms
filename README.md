@@ -387,8 +387,53 @@
 39. Water Jug problem using BFS
 
 -----------------------------------------
-14.
+14. Backtracking
+-----------------------------------------
+1. Rat in a Maze
+2. Combinational Sum
+3. Crossword Puzzle
+4. Longest Possible Route in a Matrix with Hurdles
+5. Printing all solutions in N-Queen Problem
+6. Solve the Sudoku 
+7. Partition Equal Subset Sum 
+8. M-Coloring Problem
+9. The Knight’s tour problem
+10. Sudoku
+11. Remove Invalid Parentheses
+12. Word Break Problem using Backtracking
+13. Print all palindromic partitions of a string
+14. Find shortest safe route in a path with landmines
+15. Partition of a set into K subsets with equal sum
+16. Hamiltonian Cycle
+17. Tug of War
+18. Find Maximum number possible by doing at-most K swaps
+19. Solving Cryptarithmetic Puzzles | Backtracking-8
+20. Find paths from corner cell to middle cell in maze
+21. Arithmetic Expressions
 
+-----------------------------------------
+15.  Bit Manipulation
+-----------------------------------------
+1. Number of 1 Bits
+2. Non Repeating Numbers 
+3. Power of 2 
+4. Find position of set bit
+5. Bit Difference 
+6. Count total set bits
+7. Copy set bits in a range
+8. Calculate square of a number without using *, / and pow()
+9. Divide two integers without using multiplication, division and mod operator
+10. Power Set 
+
+-----------------------------------------
+16. Segment Trees
+-----------------------------------------
+1. Range Sum Query - Immutable
+2. Range Minimum Query
+3. Range Sum Query - Mutable
+4. Create Sorted Array through Instructions
+5. Count of Range Sum
+6. Count of Smaller Numbers After Self 
 
 
 

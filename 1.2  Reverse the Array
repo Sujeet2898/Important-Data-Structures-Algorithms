@@ -1,0 +1,47 @@
+Q. Given an array, the task is to reverse the array.
+---------------------------------------
+
+import java.util.*;
+public class ReturnSubsequences{
+
+    /* Function to reverse arr[] from
+    start to end*/
+    static void reverseArray(int arr[], int si, int ei)
+    {
+        while (si < ei)
+        {
+            int temp = arr[si];
+            arr[si] = arr[ei];
+            arr[ei] = temp;
+            si++;
+            ei--;
+        }
+    }
+
+    /* Driver program to test above function */
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for(int i = 0 ; i < n ; i++) {
+            arr[i] = sc.nextInt();
+        }
+        reverseArray(arr, 0, arr.length - 1);
+        for(int i = 0 ; i < arr.length ; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+----------------------------
+Input:
+5
+4 5 6 1 2
+
+Output:
+1 2 6 5 4
+
+***************************
+
+
+
+

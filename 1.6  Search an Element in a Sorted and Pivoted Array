@@ -61,3 +61,63 @@ Output:
 Explanation: There is no element that has value 6.
 
 **********************************************************
+
+Q.  Pivot of Sorted Rotated Array
+------------------------------------
+
+import java.util.*;
+public class ReturnSubsequences{
+
+    public static int findPivot(int a[]) {
+        int low = 0, high = a.length - 1;
+        while (low < high){
+            int mid = (low + high)/2;
+            if (a[mid] < a[high]){
+                high = mid;
+            }else{
+                low = mid + 1;
+            }
+        }
+        return a[high];  // or return a[low];
+    }
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for(int i = 0 ; i < n ; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int pivot = findPivot(arr);
+        System.out.println(pivot);
+    }
+}
+------------------------------
+Input:
+5
+80 90 100 30 20
+
+Output:
+20
+
+------
+Input:
+5
+80 10 20 30 40
+
+Output:
+10
+
+***************************************
+
+
+
+
+
+
+
+
+
+
+
+

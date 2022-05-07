@@ -10,7 +10,7 @@ Time Complexity: O(n)
 --------------------------------------------
 
 import java.util.*;
-public class ReturnSubsequences{
+public class maxSubArray{
 
     public static int maxSubArray(int[] arr) {
         int currentSum = arr[0];

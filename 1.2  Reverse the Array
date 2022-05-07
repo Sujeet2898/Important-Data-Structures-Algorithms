@@ -2,7 +2,7 @@ Q. Given an array, the task is to reverse the array.
 ---------------------------------------
 
 import java.util.*;
-public class ReturnSubsequences{
+public class Reverse{
 
     /* Function to reverse arr[] from
     start to end*/

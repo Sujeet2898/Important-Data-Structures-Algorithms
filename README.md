@@ -1,4 +1,4 @@
-# Important-Data-Structures-Algorithms
+# ⭐⭐⭐-Data-Structures-Algorithms
 -------------------------------------------
 1. Arrays
 -------------------------------------------

@@ -10,6 +10,9 @@ package Dutch_National_Flag_Algorithm;
 import java.util.Scanner;
 
 public class QuicksortUsingDutch {
+ 
+ // Time Complexity: O(nlogn)
+ // Space Complexity: O(logn) or O(1)
 
     public static void quickSortUsingDutchNationalFlag(int[] arr){
         quickSort(arr, 0, arr.length - 1);

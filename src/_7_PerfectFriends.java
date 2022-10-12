@@ -35,10 +35,15 @@ public class _7_PerfectFriends {
             }
         }
         int pairs = 0;
+        // c1 c2 c3
         for (int i = 0; i < components.size(); i++){
+            // c2 c3
             for (int j = i + 1; j < components.size(); j++){
+                // c1*c2 = 2*2 = 4
+                // c1*c3 = 2*3 = 6
+                // c2*c3 = 2*3 = 6
                 int count = components.get(i).size() * components.get(j).size();
-                pairs += count;
+                pairs += count; // 4 + 6 + 6 = 16
             }
         }
         System.out.println(pairs);
@@ -81,9 +86,9 @@ public class _7_PerfectFriends {
 Input:
 7
 5
-0 1
-2 3
-4 5
+0 1   // c1 - 0,1
+2 3   // c2 - 2,3
+4 5   // c3 - 4,5,6
 5 6
 4 6
 

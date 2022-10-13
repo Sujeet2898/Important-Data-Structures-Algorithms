@@ -30,6 +30,9 @@ Output: 6
 import java.util.Scanner;
 
 public class _25_WithTransactionFeeInfiniteTransactions {
+ 
+ // Time complexity: O(N)
+ // Space complexity: O(1)
 
     public static int getMaximumProfit3 (int[] prices, int fee){
 

@@ -27,6 +27,9 @@ Total profit is 4
 import java.util.Scanner;
 
 public class _24_InfiniteTransactions {
+    
+    // Time Complexity: O(N) --> Where N is the size of prices array. 
+    // Space Complexity: O(1) --> We do not use any extra space. 
 
     public static int getMaximumProfit2 (int[] prices){
 

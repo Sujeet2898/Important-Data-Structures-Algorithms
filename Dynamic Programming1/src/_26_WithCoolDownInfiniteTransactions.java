@@ -26,6 +26,9 @@ Output: 0
 import java.util.Scanner;
 
 public class _26_WithCoolDownInfiniteTransactions {
+ 
+  // Time complexity: O(N)
+  // Space complexity: O(1)
 
     public static int getMaximumProfit4 (int[] prices){
 

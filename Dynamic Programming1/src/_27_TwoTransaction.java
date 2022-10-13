@@ -31,6 +31,9 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 import java.util.Scanner;
 
 public class _27_TwoTransaction {
+    
+    // Time Complexity: O(N) --> Where N is the size of prices array. 
+    // Space Complexity: O(N) --> We are creating dp on the left and dp on the right. 
 
     public static int getMaximumProfit5 (int[] prices){
 

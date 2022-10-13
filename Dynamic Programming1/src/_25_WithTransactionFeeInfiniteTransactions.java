@@ -33,8 +33,8 @@ public class _25_WithTransactionFeeInfiniteTransactions {
 
     public static int getMaximumProfit3 (int[] prices, int fee){
 
-        int oldBoughtStateProfit = -prices[0];
-        int oldSoldStateProfit = 0;
+        int oldBoughtStateProfit = -prices[0];  // one extra share
+        int oldSoldStateProfit = 0;   // no extra share
 
         for (int i = 1; i < prices.length; i++){
             int newBoughtStateProfit = 0;

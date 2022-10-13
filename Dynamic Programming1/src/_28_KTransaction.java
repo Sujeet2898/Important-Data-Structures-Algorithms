@@ -26,6 +26,9 @@ Explanation: Buy on day 2 (price = 2) and sell on day 3 (price = 6), profit = 6-
 import java.util.Scanner;
 
 public class _28_KTransaction {
+ 
+ // Time complexity: O(N*K), where N is the length of the given array and K is the number of transactions allowed. 
+ // Space complexity: O(N*K)
 
     public static int getMaximumProfit6 (int[] prices, int k){
 

@@ -51,10 +51,10 @@ public class _27_TwoTransaction {
 
             // Storing MaxProfitIfSoldUpToToday
             maxProfitIfSoldToday = prices[i] - leastSoFar;
-            if (maxProfitIfSoldToday > dpOnTheLeft[i - 1]){
-                dpOnTheLeft[i] = maxProfitIfSoldToday;
+            if (maxProfitIfSoldToday > dpOnTheLeft[i - 1]){  // maxProfitIfSoldToday is greater than maxProfitIfSoldUpTOToday i.e one day before
+                dpOnTheLeft[i] = maxProfitIfSoldToday; // update today profit
             }else {
-                dpOnTheLeft[i] = dpOnTheLeft[i - 1];
+                dpOnTheLeft[i] = dpOnTheLeft[i - 1]; // update the previous profit if till now previous is the maximum
             }
         }
 
@@ -63,6 +63,7 @@ public class _27_TwoTransaction {
         int maxAfterToday = prices[prices.length - 1];
         int[] dpOnTheRight = new int[prices.length];
 
+        // last place is already intialized. so, start with second last
         for (int i = prices.length - 2; i >= 0; i--){
 
             // Maintaining maxAfterToday
@@ -72,15 +73,17 @@ public class _27_TwoTransaction {
 
             // Storing MaxProfitIfBoughtUpToToday
             maxProfitIfBoughtToday = maxAfterToday - prices[i];
-            if (maxProfitIfBoughtToday > dpOnTheRight[i + 1]){
-                dpOnTheRight[i] = maxProfitIfBoughtToday;
+            if (maxProfitIfBoughtToday > dpOnTheRight[i + 1]){  // maxProfitIfBoughtToday is greater than maxProfitIfUpToBoughtToday i.e one day after
+                dpOnTheRight[i] = maxProfitIfBoughtToday;  // update today profit
             }else {
-                dpOnTheRight[i] = dpOnTheRight[i + 1];
+                dpOnTheRight[i] = dpOnTheRight[i + 1]; // update the after profit if till now after is the maximum
             }
         }
 
         int overAllProfit = 0;
         for (int i = 0; i < prices.length; i++){
+            
+            // update the summation of best transaction on the left and best transaction on the right
             if (dpOnTheLeft[i] + dpOnTheRight[i] > overAllProfit){
                 overAllProfit = dpOnTheLeft[i] + dpOnTheRight[i];
             }

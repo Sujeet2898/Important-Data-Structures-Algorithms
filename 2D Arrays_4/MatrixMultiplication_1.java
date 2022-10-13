@@ -17,6 +17,9 @@ Question: Matrix Multiplication
 8. If the two arrays can't be multiplied, print "Invalid input".
 
  */
+    
+    // Time Complexity : O(N^3)
+    // Space Complexity : O(1)
 
     public static void matrixMultiplication(int[][] one, int r1, int c1, int[][] two, int r2, int c2){
 

@@ -24,6 +24,9 @@ Explanation: In this case, no transactions are done and the max profit = 0.
 import java.util.Scanner;
 
 public class _23_OneTransaction {
+    
+    // Time Complexity: O(N) --> Where N is the size of prices array. 
+    // Space Complexity: O(1) --> We do not use any extra space. 
 
     public static int getMaximumProfit1 (int[] prices){
 

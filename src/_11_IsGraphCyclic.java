@@ -60,7 +60,7 @@ public class _11_IsGraphCyclic {
 
             // 2. Mark Star (means visited)
             if (visited[remove.vertex] == true){    // no work is done anymore if it is already visited
-                continue;
+                return true;
             }
             visited[remove.vertex] = true;  // mark visited if it is not visited
 

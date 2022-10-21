@@ -148,6 +148,89 @@ Output:
     }
 
 
+
+----------BubbleSort-----------------
+/* Logic: We fill the heaviest element from last so that the length of the array to be sorted decreases from end.
+In bubble sort, we run n-1 times loop. In the first loop, we pick the heaviest element from the array and push them at the end. 
+In the second loop, we pick the second heaviest element and push them at the second last and so on, so that elements get arranged from the end. 
+And we are only left with the nth element which is the lightest one which automatically gets placed at the beginning. 
+And everytime, we get the heaviest element by swapping the elements pairwise. 
+Disadvantage: Unnecessary swapping is done at each iteration unlike selection sort.
+Advantage: It is In-Place sort. It is also stable as it does not change the relative order of elements with equal keys.
+*/
+ 
+// Time Complexity: O(n^2)
+// Space Complexity: O(1)
+ 
+ public static void bubble(int[] arr) {
+       for(int i = 0; i < arr.length - 1; i++) {
+           for(int j = 0; j < arr.length - 1 - i; j++) {
+               if(arr[j] > arr[j + 1]) {
+                   //swap
+                   int temp = arr[j];
+                   arr[j] = arr[j + 1];
+                   arr[j +1 ] = temp;
+               }
+           }
+       }
+   }
+
+ 
+----------SelectionSort-----------------
+/* Logic: We fill the smallest element from the beginning so that the length of the array to be sorted decreases from front.
+In selection sort, we pick the smallest element from the array and push them at the beginning.
+We also run a n-1 times loop. In the first loop, we assume the 0th index of the array as the smallest element and keep comparing it with the next element 
+to find the appropriate position of the smallest element of the array. And swap that smallest element with the 0th index element. 
+In the second loop, we assume the 1th index of the array as the smallest element and continue the same process for it and so on.
+Advantage: One swapping per iteration unlike bubble sort. And In-Place sort.
+*/
+
+// Time Complexity: O(n^2)
+// Space Complexity: O(1)
+ 
+   public static void selection(int[] arr) {
+       for(int  i= 0; i < arr.length - 1; i++) {
+           int smallest = i;                     
+           for(int j = i + 1; j < arr.length; j++) {
+               if(arr[j] < arr[smallest]) {
+                   smallest = j;
+               }
+           }
+           //swap
+           int temp = arr[smallest];
+           arr[smallest] = arr[i];   
+           arr[i] = temp;
+       }
+   }
+
+ 
+ 
+----------InsertionSort-----------------
+/* In insertion sort, we generally divide the array into sorted and unsorted parts. After that we start picking elements one by one from the unsorted array, 
+and place it in its correct position in the sorted array. In this way, the sorted array slowly increases and the unsorted array slowly decreases. And at the end, the whole array gets sorted.
+Advantage: Stable sort, In-Place sort, Number of swaps reduced unlike bubble sort, Total no. of steps is also reduced for partially sorted array.
+Disadvantage: It is generally used when the value of n is small. For larger values of n, it is inefficient.
+*/
+ 
+// Time Complexity: O(n^2)
+// Space Complexity: O(1)
+ 
+    public static void selection(int[] arr) {
+       for(int i = 1; i < arr.length; i++) {    // run in unsorted array
+           int current = arr[i];  // picking the current element
+           int j = i - 1;         // pick the last index of sorted part
+           while(j >= 0 && current < arr[j]) {   // move in the sorted part with help of j till it is greater than 0 and compare current element with index of j element
+                //Keep swapping
+                arr[j + 1] = arr[j];    //making space for bigger value than current value
+                j--;
+           }
+               //place the element in the correct position if the condition dissatisfied
+           arr[j + 1] = current;
+       }
+   }
+
+
+
 /*
 ******************************************************************
 package Dutch_National_Flag_Algorithm;

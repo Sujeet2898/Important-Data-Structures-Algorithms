@@ -215,7 +215,7 @@ Disadvantage: It is generally used when the value of n is small. For larger valu
 // Time Complexity: O(n^2)
 // Space Complexity: O(1)
  
-    public static void selection(int[] arr) {
+    public static void insertion(int[] arr) {
        for(int i = 1; i < arr.length; i++) {    // run in unsorted array
            int current = arr[i];  // picking the current element
            int j = i - 1;         // pick the last index of sorted part

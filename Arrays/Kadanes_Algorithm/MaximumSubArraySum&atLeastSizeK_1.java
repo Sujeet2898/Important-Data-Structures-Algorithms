@@ -83,21 +83,26 @@ Space complexity: O(1), as no extra space is required.
             maxSum[i] = currentSum;
         }
         
+        // Window for 1st k size
         int exactK = 0;
-        for(int i = k; i < k; i++){
+        for(int i = 0; i < k; i++){
             exactK += arr[i];
         }
+        // Updating ans
         if(exactK > ans){
             ans = exactK;
         }
         
-        for (int i = 1; i < arr.length; i++){
+        // Moving exactK window forward
+        for (int i = k; i < arr.length; i++){
             exactK = exactK + arr[i] - arr[i - k];
             
+            // Also Updating ans inside
             if(exactK > ans){
                ans = exactK;
             }
             
+            // AtLeast K size
             int moreThanK = maxSum[i - k] + exactK;
             if(moreThanK > ans){
                ans = moreThanK;

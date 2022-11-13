@@ -60,6 +60,52 @@ Space complexity: O(1), as no extra space is required.
             }
             return overAllSum;
         }
+        
+-----------------------------------------------------------------------------
+    Question: Maximum Sum Subarray with at least Size K
+-----------------------------------------------------------------------------
+    public static long maxSubarraySumWithAtLeastKSize(int[] arr, int k){
+        int ans = Integer.MIN_VALUE;
+        int[] maxSum = new int[arr.length];
+        int currentSum = arr[0];
+        maxSum[0] = currentSum;
+        
+        for (int i = 1; i < arr.length; i++){
+
+            // Join the incoming train if it is +ve
+            if (currentSum >= 0){
+                currentSum += arr[i];
+            }else{
+                // Form a new train if the incoming train is -ve
+                currentSum = arr[i];
+            }
+
+            maxSum[i] = currentSum;
+        }
+        
+        int exactK = 0;
+        for(int i = k; i < k; i++){
+            exactK += arr[i];
+        }
+        if(exactK > ans){
+            ans = exactK;
+        }
+        
+        for (int i = 1; i < arr.length; i++){
+            exactK = exactK + arr[i] - arr[i - k];
+            
+            if(exactK > ans){
+               ans = exactK;
+            }
+            
+            int moreThanK = maxSum[i - k] + exactK;
+            if(moreThanK > ans){
+               ans = moreThanK;
+            }
+        }
+        
+       return ans;
+     }
 
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);

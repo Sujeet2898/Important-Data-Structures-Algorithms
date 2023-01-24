@@ -66,8 +66,12 @@ Space complexity: O(1), as no extra space is required.
 -----------------------------------------------------------------------------
     public static long maxSubarraySumWithAtLeastKSize(int[] arr, int k){
         int ans = Integer.MIN_VALUE;
+        
+        // Array for storing best subArray at each point
         int[] maxSum = new int[arr.length];
         int currentSum = arr[0];
+        
+        // Best subArray at each point
         maxSum[0] = currentSum;
         
         for (int i = 1; i < arr.length; i++){
@@ -80,6 +84,7 @@ Space complexity: O(1), as no extra space is required.
                 currentSum = arr[i];
             }
 
+            // Best subArray at each point
             maxSum[i] = currentSum;
         }
         
